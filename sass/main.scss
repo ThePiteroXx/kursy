@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: none;
 }
 
 html {
@@ -20,6 +19,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
 }
+
 
 //nav
 .burger-btn {
@@ -132,6 +132,12 @@ body {
 
 .nav-items-animation {
     animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+    background-color: #dark;
 }
 
 //header
@@ -328,6 +334,7 @@ body {
                 transform: translateX(-50%);
                 bottom: 2em;
                 padding: 1em;
+                border: none;
                 border-radius: 8px;
                 width: 80%;
                 background-color: $green-color;
@@ -530,7 +537,7 @@ body {
         margin: 2em 0 1em;
     }
 
-    &__box-link{
+    &__box-link {
         padding: 0.3em;
         font-size: 3.6rem;
         color: $pure-white;
@@ -545,6 +552,12 @@ body {
             color: $light-white;
         }
     }
+
+    &__bottom-text {
+        padding: 2em;
+        text-align: center;
+    }
+
 }
 
 // ==================================

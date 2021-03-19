@@ -100,7 +100,6 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
 }
 
 html {
@@ -250,6 +249,12 @@ body {
 .nav-items-animation {
   -webkit-animation: navItemsAnimation 1s both;
           animation: navItemsAnimation 1s both;
+}
+
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+  background-color: #dark;
 }
 
 .header {
@@ -474,6 +479,7 @@ body {
           transform: translateX(-50%);
   bottom: 2em;
   padding: 1em;
+  border: none;
   border-radius: 8px;
   width: 80%;
   background-color: #00ffaa;
@@ -707,6 +713,11 @@ body {
 
 .footer__box-link:hover {
   color: #eee;
+}
+
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
 }
 
 @media (min-width: 576px) {
